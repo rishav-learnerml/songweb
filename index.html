@@ -30,18 +30,18 @@
         </script>
         <script>
             var bleep = new Audio();
-            bleep.src= "button-3.mp3"
+            bleep.src = "button-3.mp3"
         </script>
         <script>
             var magic = new Audio();
-            magic.src= "African Coffin Dance Astronomia(PaglaSongs) (2).mp3"
+            magic.src = "African Coffin Dance Astronomia(PaglaSongs) (2).mp3"
         </script>
     </div>
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark" >
-        <a class="navbar-brand " href="#" onmousedown="magic.play()" onmouseover="magic.pause()">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand " id='fort' onmousedown="magic.play()" onmouseover="magic.pause()">
             <img src="1590478061450.png" width="50" height="70" alt="" loading="lazy">
             <c>R I S H A V</c>
         </a>
@@ -61,7 +61,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" http-equiv="Refresh" content="0" url="https://www.github.io/rishav-learnerml/"
-                        href="https://www.github.io/rishav-learnerml/" onmousedown="bleep.play()" >
+                        href="https://www.github.io/rishav-learnerml/" onmousedown="bleep.play()">
 
                         <d>Github Link</d>
                     </a>
@@ -73,12 +73,13 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="nav-link dropdown-item" http-equiv="Refresh" content="0"
                                     url="https://www.linkedin.com/in/rishav-chatterjee-384505173"
-                                    href="https://www.linkedin.com/in/rishav-chatterjee-384505173" onmousedown="bleep.play()">
+                                    href="https://www.linkedin.com/in/rishav-chatterjee-384505173"
+                                    onmousedown="bleep.play()">
                                     <e>Linkedin</e>
                                 </a>
                                 <a class="nav-link dropdown-item" http-equiv="Refresh" content="0"
-                                    url="https://twitter.com/@RishavC64649442"
-                                    href="https://twitter.com/@RishavC64649442" onmousedown="bleep.play()">
+                                    url="https://twitter.com/RishavC00072508" href="https://twitter.com/RishavC00072508"
+                                    onmousedown="bleep.play()">
                                     <e>Twitter</e>
                                 </a>
                                 <div class="dropdown-divider"></div>
@@ -92,18 +93,23 @@
 
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="#third" tabindex="-1" aria-disabled="true"onmousedown="bleep.play()"><d>World Clock</d></a>
+            <a class="nav-link active" href="#third" tabindex="-1" aria-disabled="true" onmousedown="bleep.play()">
+                <d>World Clock</d>
+            </a>
         </li>
 
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onmousedown="bleep.play()">Search</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                onmousedown="bleep.play()">Search</button>
         </form>
-        <button class="btn  my-2  mx-1" data-toggle="modal"
-        data-target="#signupModal" onmousedown="bleep.play()"><f>Sign Up</f></button>
-        <button class="btn  my-2  mx-1" data-toggle="modal"
-        data-target="#loginModal" onmousedown="bleep.play()"><d>Log in</d></button>
+        <button class="btn  my-2  mx-1" data-toggle="modal" data-target="#signupModal" onmousedown="bleep.play()">
+            <f>Sign Up</f>
+        </button>
+        <button class="btn  my-2  mx-1" data-toggle="modal" data-target="#loginModal" onmousedown="bleep.play()">
+            <d>Log in</d>
+        </button>
         </div>
     </nav>
     <!--login Modal -->
@@ -219,7 +225,10 @@
         </div>
     </div>
     <main role="main" style="background-color:rgb(192, 193, 255)">
-      
+        <div class="alert alert-success alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Hey!!</strong> Tap my name to play some cool music!! Tap my logo to pause it anytime!!
+        </div>
         <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -227,46 +236,44 @@
                 <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
             </ol>
             <div class="carousel-inner">
-          <div class="alert alert-warning alert-dismissible fade show" role="alert">
-           <strong>Hey osmm peeps!</strong> Tap my name to hear some cool music and tap the logo to pause it anytime!! 
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-          </button>
-         </div>
                 <div class="carousel-item">
-                 
                     <img src="IMG_26052020_134955_(1400_x_500_pixel).jpg" class="img-fluid" width="100%" height="100%"
                         alt="Image is loading.... Hang on!!">
                     <div class="container">
                         <div class="carousel-caption text-left text-danger">
                             <h1>Welcome To Rishav's Website🤗</h1>
                             <p>I'm Rishav here to host you!!!</p>
-                            <p><a class="btn btn-lg btn-primary" href="#second"  role="button" onmousedown="bleep.play()">Learn More</a>
+                            <p><a class="btn btn-lg btn-primary" href="#second" role="button"
+                                    onmousedown="bleep.play()">Learn More</a>
                             </p>
                         </div>
                     </div>
                 </div>
-                
+                <div class="carousel-item">
                     <img src="IMG_26052020_135245_(1400_x_500_pixel).jpg" class="img-fluid" width="100%" height="100%"
                         alt="Image is loading.... Hang on!!">
                     <div class="container">
                         <div class="carousel-caption text-success">
                             <h1>A Variety of Technology to offer you!!🐱‍</h1>
                             <p>Start your journey with me from today!!!😊</p>
-                            <p><a class="btn btn-lg btn-warning" href="sign up"  data-target="#signupModal" data-toggle="modal" role="button" onmousedown="bleep.play()" >Sign Up</a></p>
-                            
+                            <p><a class="btn btn-lg btn-warning" href="sign up" data-target="#signupModal"
+                                    data-toggle="modal" role="button" onmousedown="bleep.play()">Sign Up</a></p>
+
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item active">
+
                     <img src="IMG_26052020_135504_(1400_x_500_pixel).jpg" class="img-fluid" width="100%" height="100%"
                         alt="Image is loading.... Hang on!!">
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <h1>Wanna know more about me??🤔</h1>
                             <p>I admire people like you!!!</p>
-                            <p><a class="btn btn-success" type="link" http-equiv="Refresh" content="0" url="https://www.github.io/rishav-learnerml/"
-                                href="https://www.github.io/rishav-learnerml/"   role="button" onmousedown="bleep.play()">Know more</a></p>
+                            <p><a class="btn btn-success" type="link" http-equiv="Refresh" content="0"
+                                    url="https://www.github.io/rishav-learnerml/"
+                                    href="https://www.github.io/rishav-learnerml/" role="button"
+                                    onmousedown="bleep.play()">Know more</a></p>
                         </div>
                     </div>
                 </div>
@@ -330,7 +337,8 @@
                 <div class="col-md-7" id="second">
                     <h2 class="featurette-heading my-4">About Me: <span class="text-muted">Get to know
                             about me!!😎</span></h2>
-                    <p class="lead">I'm a Second year student of GCELT. I love coding, Machine Learning and building
+                    <p class="lead">I'm a Second year student of GCELT. I love coding, Machine Learning and
+                        building
                         Websites. I'm Very much interested in Learning new things!!!😄. I love singing also.</p>
                 </div>
                 <div class="col-md-5">
@@ -348,7 +356,8 @@
                 <div class="col-md-7 order-md-2">
                     <h2 class="featurette-heading"> <span class="text-muted">Certifications</span></h2>
                     <p class="lead">I'm a Microsoft Certified ML engineer as well as a Microsoft certified Data
-                        Scientist. I love android,Web-dev also,...I love learning different and new technologies!!!!🤩
+                        Scientist. I love android,Web-dev also,...I love learning different and new
+                        technologies!!!!🤩
                     </p>
                 </div>
                 <div class="col-md-5 order-md-1">
@@ -367,7 +376,8 @@
                 <div class="col-md-7">
                     <h2 class="featurette-heading">My Moto: <span class="text-muted">Rishipedia🤨</span>
                     </h2>
-                    <p class="lead">I want to make myself adapt with the corporate world and want to achieve a great
+                    <p class="lead">I want to make myself adapt with the corporate world and want to achieve a
+                        great
                         success there. I want to develop a great career gradually!!!</p>
                 </div>
                 <div class="col-md-5">

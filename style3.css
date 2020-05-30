@@ -1,0 +1,34 @@
+/*styling background*/ 
+body { 
+    margin: 0; 
+    padding: 0; 
+    display: ruby-base; 
+    height: 100; 
+    justify-content: left; 
+    align-items: left; 
+    background-color: #000; 
+    font-family: cursive  ;
+    font-size-adjust: inherit; 
+} 
+
+/* styling the button*/ 
+f{ 
+    padding: 5px 5px; 
+    display: inline-block; 
+    color: #fcf804; 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    font-size: 1em; 
+    overflow: hidden; 
+} 
+
+/*creating animation effect*/ 
+f:hover { 
+    color: #111; 
+    background: #fcf804; 
+    box-shadow: 0 0 50px #fcf804; 
+} 
+
+African Coffin Dance Astronomia(PaglaSongs).mp3
+

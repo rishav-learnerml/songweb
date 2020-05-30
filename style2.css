@@ -1,0 +1,32 @@
+ /*styling background*/ 
+ body { 
+    margin: 0; 
+    padding: 0; 
+    display: ruby-base; 
+    height: 100; 
+    justify-content: left; 
+    align-items: left; 
+    background-color: #000; 
+    font-family: cursive  ;
+    font-size-adjust: inherit; 
+} 
+
+/* styling the button*/ 
+e{ 
+    padding: 5px 5px; 
+    display: inline-block; 
+    color: #e60e9e; 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    font-size: 1em; 
+    overflow: hidden; 
+} 
+
+/*creating animation effect*/ 
+e:hover { 
+    color: #111; 
+    background: #e60e9e; 
+    box-shadow: 0 0 50px #e60e9e; 
+} 
+

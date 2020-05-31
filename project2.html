@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type='text/css' href="style.css" />
+    <link rel="stylesheet" type='text/css' href="style2.css" />
+    <link rel="stylesheet" type='text/css' href="style3.css" />
+    <link rel="stylesheet" type='text/css' href="logo.css" />
+    <title>TO DO List</title>
+    <script>
+        var bleep = new Audio();
+        bleep.src = "button-3.mp3"
+    </script>
+    <script>
+        var magic = new Audio();
+        magic.src = "African Coffin Dance Astronomia(PaglaSongs) (2).mp3"
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand " id='fort' onmousedown="magic.play()" onmouseover="magic.pause()">
+            <img src="1590478061450.png" width="50" height="70" alt="" loading="lazy">
+            <c>R I S H A V</c>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html" onmousedown="bleep.play()">
+                        <d>Home </d>
+
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" http-equiv="Refresh" content="0" url="https://www.github.io/rishav-learnerml/"
+                        href="https://www.github.io/rishav-learnerml/" onmousedown="bleep.play()">
+
+                        <d>Github Link</d>
+                    </a>
+                <li class="nav-item dropdown">
+                    <e> <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" onmousedown="bleep.play()">
+                            About me:
+
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="nav-link dropdown-item" http-equiv="Refresh" content="0"
+                                    url="https://www.linkedin.com/in/rishav-chatterjee-384505173"
+                                    href="https://www.linkedin.com/in/rishav-chatterjee-384505173"
+                                    onmousedown="bleep.play()">
+                                    <e>Linkedin</e>
+                                </a>
+                                <a class="nav-link dropdown-item" http-equiv="Refresh" content="0"
+                                    url="https://twitter.com/RishavC00072508" href="https://twitter.com/RishavC00072508"
+                                    onmousedown="bleep.play()">
+                                    <e>Twitter</e>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="nav-link dropdown-item" http-equiv="Refresh" content="0"
+                                    url="https://www.facebook.com/rishav.chatterjee.940"
+                                    href="https://www.facebook.com/rishav.chatterjee.940" onmousedown="bleep.play()">
+                                    <e>Facebook</e>
+                                </a>
+                    </e>
+        </div>
+
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" http-equiv="Refresh" content="0"
+            url="https://www.timeanddate.com/worldclock/" href="https://www.timeanddate.com/worldclock/"  onmousedown="bleep.play()">
+                <d>World Clock</d>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#items" tabindex="-1" aria-disabled="true" onmousedown="bleep.play()">
+                <f>To Do List</df>
+            </a>
+        </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                onmousedown="bleep.play()">Search</button>
+        </form>
+        <button class="btn  my-2  mx-1" data-toggle="modal" data-target="#signupModal" onmousedown="bleep.play()">
+            <f>Sign Up</f>
+        </button>
+        <button class="btn  my-2  mx-1" data-toggle="modal" data-target="#loginModal" onmousedown="bleep.play()">
+            <d>Log in</d>
+        </button>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center">
+            <d>To DO List</d>
+        </h2>
+
+        <div class="form-group">
+            <label for="title">
+                <e>Title</e>
+            </label>
+            <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Add an item to the List</small>
+        </div>
+        <div class="form-group">
+            <label for="description">
+                <e>Description</e>
+            </label>
+            <textarea class="form-control" id="description" rows="3"></textarea>
+        </div>
+
+        <button  id="add" class="btn btn-outline-success" onmousedown="bleep.play()">
+            <d>Add to List</d>
+        </button>
+        <button  id="clear" class="btn btn-outline-danger" onclick="clearStorage()" onmousedown="bleep.play()">
+            <e>Clear List</e>
+        </button>
+
+
+        <div id="items" class="my-5" style="background-color:rgb(10, 162, 250) ;">
+            <h2>
+                <f>Your Items:</f>
+            </h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">S.No</th>
+                        <th scope="col">Item Tite</th>
+                        <th scope="col">Item Description</th>
+                        <th scope="col">Action</th>
+
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Get Some Coffee!!</td>
+                        <td>You need coffee as you're a coder!</td>
+                        <td><button class="btn btn-sm btn-outline-danger" onmousedown="bleep.play()">Delete</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Rishav's website</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+                <button type="button" class="btn-outline-danger" data-dismiss="modal">Close</button>
+
+
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+
+    </div>
+
+    <!--signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an account in my website😊</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4"> Confirm Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>West Bengal</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-outline-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Create account</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script>
+       function getAndUpdate(){
+                console.log("Updating List...");
+                tit = document.getElementById('title').value;
+                desc = document.getElementById('description').value;
+                if (localStorage.getItem('itemsJson')==null){
+                    itemJsonArray = [];
+                    itemJsonArray.push([tit, desc]);
+                    localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+                }
+                else{
+                    itemJsonArrayStr = localStorage.getItem('itemsJson')
+                    itemJsonArray = JSON.parse(itemJsonArrayStr);
+                    itemJsonArray.push([tit, desc]);
+                    localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+                }
+                update();
+            }
+
+            function update(){
+                if (localStorage.getItem('itemsJson')==null){
+                    itemJsonArray = []; 
+                    localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+                } 
+                else{
+                    itemJsonArrayStr = localStorage.getItem('itemsJson')
+                    itemJsonArray = JSON.parse(itemJsonArrayStr); 
+                }
+                // Populate the table
+                let tablebody = document.getElementById("tablebody");
+                let str = "";
+                itemJsonArray.forEach((element, index) => {
+                    str += `
+                    <tr>
+                    <th scope="row">${index + 1}</th>
+                    <td>${element[0]}</td>
+                    <td>${element[1]}</td> 
+                    <td><button class="btn btn-sm btn-outline-danger" onclick="deleted(${index}"> Delete</button></td> 
+                    </tr>`; 
+                });
+                tablebody.innerHTML = str;
+            }
+            add = document.getElementById("add");
+            add.addEventListener("click", getAndUpdate);
+            update();
+            function deleted(itemIndex){
+                console.log("Delete", itemIndex);
+                itemJsonArrayStr = localStorage.getItem('itemsJson')
+                itemJsonArray = JSON.parse(itemJsonArrayStr);
+                // Delete itemIndex element from the array
+                itemJsonArray.splice(itemIndex, 1);
+                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
+                update();
+
+            }
+            function clearStorage(){
+                if (confirm("Do you areally want to clear?")){
+                console.log('Clearing the storage')
+                localStorage.clear();
+                update()
+                }
+            }
+    </script>
+</body>
+
+</html>

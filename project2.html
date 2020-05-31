@@ -150,7 +150,7 @@
                         <th scope="row">1</th>
                         <td>Get Some Coffee!!</td>
                         <td>You need coffee as you're a coder!</td>
-                        <td><button class="btn btn-sm btn-outline-danger" onmousedown="bleep.play()">Delete</button></td>
+                        <td><button class="btn btn-sm btn-outline-danger">Delete</button></td>
                     </tr>
 
                 </tbody>
@@ -320,7 +320,7 @@
                     <th scope="row">${index + 1}</th>
                     <td>${element[0]}</td>
                     <td>${element[1]}</td> 
-                    <td><button class="btn btn-sm btn-outline-danger" onclick="deleted(${index}"> Delete</button></td> 
+                    <td><button class="btn btn-sm btn-outline-danger" onclick="deleted(${index})">Delete</button></td> 
                     </tr>`; 
                 });
                 tablebody.innerHTML = str;
